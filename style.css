@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #353535;
+    font-weight: 400;
+    font-size: 14px;
+    background-image: url("https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
+.menu {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.menu a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+
+.hamburguesa {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.3s ease; 
+}
+
+.hamburguesa div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px;
+    transition: all 3.0s ease;
+}
+
+
+@media (max-width: 768px) {
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #333;
+        text-align: center;
+    }
+
+    .menu ul.active {
+        display: flex;
+    }
+
+   
+}
+
+.hamburguesa.active div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px); 
+}
+
+.hamburguesa.active div:nth-child(2) {
+    opacity: 0; 
+}
+
+.hamburguesa.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px); 
+}
+
+
+#menulista {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+    transition: all 0.5s ease; 
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+
+#menulista.active {
+    display: flex;
+    opacity: 1;  
+}
+
+@media (max-width: 1920px) {
+    .hamburguesa {
+        display: flex;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+p{
+    text-align: center;
+    color: white;
+}
+.videoReel {
+    position: relative;
+    width: 100vw;  
+    height: 60vw; 
+    max-width: 100%;   
+    overflow: hidden; 
+}
+
+.videoReel iframe {
+    width: 100%;  
+    height: 100%; 
+    border: none; 
+}
+a{
+    color: aqua;
+}
+.biografia {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+
+
+   h2 {
+    font-size: 1.8em;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: aliceblue;
+    text-align: center;
+  }
+
+  h3{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: aliceblue;
+    text-align: center;
+  }
+
+  .biografia p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  .biografia p:last-child {
+    margin-bottom: 0;
+  }
+.parallax {
+    background-image: url("https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg"); 
+    height: 50vh;  
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+#contacto{
+background-color: aliceblue;
+}
+
+#confirmacion{
+    color: black;
+}
+
+@media (max-width: 600px) {
+    body {
+      font-size: 1rem;
+    }
+    .container {
+      flex-direction: column; 
+      align-items: center;
+    }
+  }
+  
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    body {
+      font-size: 1.1rem;
+    }
+    .container {
+      flex-direction: row;
+    }
+  }
+  
+  
+  @media (min-width: 1025px) {
+    body {
+      font-size: 1.3rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  }
+
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Tamaño más grande */
+    gap: 10px;
+    padding: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+

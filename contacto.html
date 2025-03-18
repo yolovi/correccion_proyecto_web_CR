@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="contacto">
+    <nav class="menu">
+        <div class="hamburguesa" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+            <ul id="menulista">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biografia.html">Biografía</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    
+
+    <h1>Contacto</h1>
+<form id="formulario">
+    <label for="fname">Nombre</label>
+    <input type="text" id="fname" name="fname" placeholder="Nombre" required autofocus>
+
+    <label for="lname">Apellidos</label>
+    <input type="text" id="lname" name="lname" placeholder="Apellidos" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Pon aquí tu email" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" required></textarea>
+
+    <button type="submit">Enviar</button>
+</form>
+<p id="confirmacion" style="display: none;"> Tu mensaje se ha enviado con éxito</p>
+<script src="script.js"></script>
+</body>
+</html>
