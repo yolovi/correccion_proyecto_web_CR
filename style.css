@@ -142,14 +142,12 @@ p{
 a{
     color: aqua;
 }
-.biografia {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-  }
+.explicacion p{
+    display: flex;
+    text-align: justify;
+    padding-left: 100px;
+    padding-right: 100px;
+}
 
 
    h2 {
@@ -167,14 +165,13 @@ a{
     text-align: center;
   }
 
-  .biografia p {
-    font-size: 1.2em;
-    margin-bottom: 15px;
+  #biografia p {
+    font-size: 1em;
+    padding-left: 100px;
+    padding-right: 100px;
     text-align: justify;
   }
-  .biografia p:last-child {
-    margin-bottom: 0;
-  }
+  
 .parallax {
     background-image: url("https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg"); 
     height: 50vh;  
@@ -183,7 +180,13 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+ .audios{
+    padding: 10px;
+    background-color: rgb(49, 130, 200);
+    padding-left: 350px;
+    padding-right: 350px;
+    
+ }
 form {
     max-width: 400px;
     margin: auto;
@@ -271,5 +274,6 @@ background-color: aliceblue;
 #pie{
     color: aliceblue;
     padding: 20px;
+    font-size: 1rem;
 
 }
