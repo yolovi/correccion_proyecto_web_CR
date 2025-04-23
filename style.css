@@ -122,10 +122,7 @@ h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
-p{
-    text-align: center;
-    color: white;
-}
+
 .videoReel {
     position: relative;
     width: 100vw;  
@@ -140,15 +137,23 @@ p{
     border: none; 
 }
 a{
+    color: orange;
+}
+a:hover{
     color: aqua;
 }
-.explicacion p{
+
+p {
+    color: white;
     display: flex;
     text-align: justify;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
-
+.contenido p{
+    padding-left: 250px !important;
+    
+}
 
    h2 {
     font-size: 1.8em;
@@ -165,12 +170,7 @@ a{
     text-align: center;
   }
 
-  #biografia p {
-    font-size: 1em;
-    padding-left: 100px;
-    padding-right: 100px;
-    text-align: justify;
-  }
+ 
   
 .parallax {
     background-image: url("https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg"); 
@@ -180,12 +180,11 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
- .audios{
-    padding: 10px;
+ #audios{
     background-color: rgb(49, 130, 200);
-    padding-left: 350px;
-    padding-right: 350px;
-    
+    padding: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
  }
 form {
     max-width: 400px;
@@ -212,7 +211,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #e6b243;
 }
 
 
@@ -228,7 +227,7 @@ background-color: aliceblue;
     body {
       font-size: 1rem;
     }
-    .container {
+    .contenido {
       flex-direction: column; 
       align-items: center;
     }
@@ -239,7 +238,7 @@ background-color: aliceblue;
     body {
       font-size: 1.1rem;
     }
-    .container {
+    .contenido {
       flex-direction: row;
     }
   }
@@ -249,7 +248,7 @@ background-color: aliceblue;
     body {
       font-size: 1.3rem;
     }
-    .container {
+    .contenido {
       max-width: 1200px;
       margin: 0 auto;
       padding: 20px;
@@ -269,6 +268,10 @@ background-color: aliceblue;
     aspect-ratio: 1 / 1;
     border-radius: 10px;
     object-fit: cover;
+}
+#formulario{
+background: #9cd8e7;
+padding: 20px;
 }
 
 #pie{
