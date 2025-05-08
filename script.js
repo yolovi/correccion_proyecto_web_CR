@@ -10,16 +10,18 @@ function toggleMenu(){
         menu.style.maxHeight = "300px"; 
     }
 
-    menu.classList.toggle("active"); 
-
 }
 
-document.getElementById("formulario").addEventListener("submit", function(event) {
-    event.preventDefault(); 
+window.onload = function() {
+    const formulario = document.getElementById("formulario");
+    const mensaje = document.getElementById("confirmacion");
 
-    
-    document.getElementById("confirmacion").style.display = "block";
+    // Ocultar el mensaje desde JavaScript (sin usar style en el HTML)
+    mensaje.style.display = "none";
 
-    
-    this.reset();
-});
+    formulario.addEventListener("submit", function(event) {
+        event.preventDefault();
+        mensaje.style.display = "block";
+        formulario.reset();
+    });
+};
