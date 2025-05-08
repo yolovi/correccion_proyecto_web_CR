@@ -16,12 +16,16 @@ window.onload = function() {
     const formulario = document.getElementById("formulario");
     const mensaje = document.getElementById("confirmacion");
 
-    // Ocultar el mensaje desde JavaScript (sin usar style en el HTML)
     mensaje.style.display = "none";
 
     formulario.addEventListener("submit", function(event) {
         event.preventDefault();
         mensaje.style.display = "block";
         formulario.reset();
+
+        
+        setTimeout(function() {
+            mensaje.style.display = "none";
+        }, 3000);
     });
 };
