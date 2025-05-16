@@ -11,8 +11,6 @@
 
     <link rel="stylesheet" href="style.css">
     
-    
-    
 </head>
 <body>
     
@@ -31,9 +29,11 @@
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
+    <!--
+    CORRECCION: etiqueta script la ponemos siempre encima del cierer de body(linea 78)
+    -->
     <script src="script.js"></script>
 </header>
-
 
 <main>
 <div class="videoReel">
@@ -45,18 +45,35 @@
 
 </div>
 <br><br><br>
+<!-- 
+CORRECCION: 
+    + No utilizamos <br> para dar espaciados entre elementos, usaremos CSS (margin, padding, posicionamiento)
+    + Este codigo de abajo está mal identado, eso dificulta la lectura
+    + No podemos tener un h cualquiera sin que tener sus superiores en el documento (si solo queremos dar tamaño usamos CSS)
+    + Las etiquetas semánticas dan significado a los diferentes apartados, las usamos según corresponde, aquí sobra section o article, como article es más adecuada sobra section.
+    + el header tambien sobra ahí, se utiliza para dar un encabezado (a un documento o a una parte de este), pero no para meter solo un titulo.
+    -->
 <section id="container">
     <article>
      <header>
 <h2>Bienvenidos a la web de Carlos</h2>
 </header>
-<p>Sientete libre de explorar la web y curiosear todo lo que he hecho hasta ahora.
- Aunque también puedes acceder a mi biografía pulsando <a href="biografia.html"> Aquí.</a>  </p>
+<p>
+    Sientete libre de explorar la web y curiosear todo lo que he hecho hasta ahora.
+    Aunque también puedes acceder a mi biografía pulsando <a href="biografia.html"> Aquí.</a>  
+</p>
 </article>
 </section>
 <br>
 <br>
 <hr>
+<!--
+    CORRECCION:
+        + cambia section por article
+            article: contenido relacionado
+            section: contenido NO relacionado
+        + Subrayado se da desde CSS
+-->
 <section id="explicacion">
     <h3><u>Intención de la Web </u></h3>
     <p>Este prototipo de web es un ejercicio que me ha servido para practicar.
@@ -68,6 +85,10 @@
         según lo que vaya aprendiendo para ponerlo en práctica.</p>
 </section>
 </main>
+<!--
+    CORRECCION:
+        + Espaciado con CSS
+-->
 <br>
 <br>
 <br>

@@ -1,9 +1,10 @@
 
-
-
 function toggleMenu(){
     document.getElementById("menulista").classList.toggle("active");
     document.querySelector(".hamburguesa").classList.toggle("active");
+    /**
+     * CORRECCION: esa condicional no puede ejecutarse, menu no está declarado
+     */
     if (menu.classList.contains("active")) {
         menu.style.maxHeight = "0px"; 
     } else {
